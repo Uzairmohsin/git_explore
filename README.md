@@ -1,3 +1,3 @@
 # git_demo
 Calculator for self learning.
-Author - Uzair Shaikh
+Author - Uzair Mohsin Shaikh
