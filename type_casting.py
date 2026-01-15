@@ -340,13 +340,30 @@ print(hi.format( name, country))
 # for i in range(1,11):
 #     print(f"{int(a)} X {i} = {int(a)*i}")
 
-try:
-    num = int(input("Enter an integer: "))
-    a = [6 , 3]
-    print(a[num])
-except ValueError:
-    print("Number entered is not an integer")
-except IndexError:
-    print("index not valid") 
-finally:
-    print("I am always exicuted")
+# try:
+#     num = int(input("Enter an integer: "))
+#     a = [6 , 3]
+#     print(a[num])
+# except ValueError:
+#     print("Number entered is not an integer")
+# except IndexError:
+#     print("index not valid") 
+# finally:
+#     print("I am always exicuted")
+
+def func1():
+    try:
+        a = int(input("Enter your 1st number: "))
+        b = int(input("Enter your 2nd number: "))
+        print(a / b)
+
+    except ZeroDivisionError:
+        print("Cannot divide by zero")
+
+    except ValueError:
+        print("Invalid input (must be integer)")
+
+    finally:
+        print("Program finished")
+
+func1()
