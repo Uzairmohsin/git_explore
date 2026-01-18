@@ -351,21 +351,38 @@ print(hi.format( name, country))
 # finally:
 #     print("I am always exicuted")
 
-def func1():
+# def func1():
+#     try:
+#         a = int(input("Enter your 1st number: "))
+#         b = int(input("Enter your 2nd number: "))
+#         print(a / b)
+
+#     except ZeroDivisionError:
+#         print("Cannot divide by zero")
+
+#     except ValueError:
+#         print("Invalid input (must be integer)")
+
+#     finally:
+#         print("Program finished")
+
+# func1()
+
+# #this is the new life
+# a = str(input("enter any value btwn 2 to 6: "))
+# if (a == "quit"):
+#     print("the value is correct" )
+# elif int(a) < 2 and int(a) > 6:
+#     raise ValueError("Value should be in between 2 and 6")
+user_input = input("Enter number between 5 and 9 (or type 'Quite' to exit):")
+if user_input.lower() == "quite":
+    print(f"You type {user_input}.So you are quite ")
+else:
     try:
-        a = int(input("Enter your 1st number: "))
-        b = int(input("Enter your 2nd number: "))
-        print(a / b)
-
-    except ZeroDivisionError:
-        print("Cannot divide by zero")
-
-    except ValueError:
-        print("Invalid input (must be integer)")
-
-    finally:
-        print("Program finished")
-
-func1()
-
-#this is the new life
+        num = int(user_input)
+        if num > 9 or num < 5:
+            raise ValueError("Value should be between 5 and 9")
+        else:
+            print(f"You entered {num}")
+    except Exception as e:
+        print("Error:",e)
