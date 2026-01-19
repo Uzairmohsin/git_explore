@@ -374,6 +374,8 @@ print(hi.format( name, country))
 #     print("the value is correct" )
 # elif int(a) < 2 and int(a) > 6:
 #     raise ValueError("Value should be in between 2 and 6")
+
+
 user_input = input("Enter number between 5 and 9 (or type 'Quite' to exit):")
 if user_input.lower() == "quite":
     print(f"You type {user_input}.So you are quite ")
@@ -386,3 +388,5 @@ else:
             print(f"You entered {num}")
     except Exception as e:
         print("Error:",e)
+
+# Vid 41 cont...
