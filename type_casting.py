@@ -389,6 +389,11 @@ print(hi.format( name, country))
 #     except Exception as e:
 #         print("Error:",e)
 
-a = 330
-b = 420
-print("A") if a > b else print ("=") if a == b else print("B")
+
+# a = 330
+# b = 420
+# print("A") if a > b else print ("=") if a == b else print("B")
+
+fruits = ["mango","banana","apple"]
+for index, fruit in enumerate(fruits, start =1):
+    print(index, fruit)
