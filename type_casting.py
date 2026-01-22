@@ -398,5 +398,9 @@ print(hi.format( name, country))
 # for index, fruit in enumerate(fruits, start =1):
 #     print(index, fruit)
 
-import uzair as u
-print(uzair)
+
+
+
+
+import uzair
+uzair.uzair()
