@@ -394,6 +394,9 @@ print(hi.format( name, country))
 # b = 420
 # print("A") if a > b else print ("=") if a == b else print("B")
 
-fruits = ["mango","banana","apple"]
-for index, fruit in enumerate(fruits, start =1):
-    print(index, fruit)
+# fruits = ["mango","banana","apple"]
+# for index, fruit in enumerate(fruits, start =1):
+#     print(index, fruit)
+
+import uzair as u
+print(uzair)
