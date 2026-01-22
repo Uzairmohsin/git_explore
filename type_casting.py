@@ -400,7 +400,5 @@ print(hi.format( name, country))
 
 
 
-
-
 import uzair
 uzair.uzair()
