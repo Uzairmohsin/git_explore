@@ -400,5 +400,21 @@ print(hi.format( name, country))
 
 
 
-import uzair
-uzair.uzair()
+# import uzair
+# uzair.uzair()
+
+x = 10   #global variable
+def func1():
+    x = 11  #local variable
+    print(f"the local variable is {x}")
+func1()
+print(x)
+
+
+x = 10   #global variable
+def func1():
+    global x   
+    x = 11
+    print(f"the local variable is {x}")
+func1()
+print(x)
