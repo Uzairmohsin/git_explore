@@ -403,18 +403,30 @@ print(hi.format( name, country))
 # import uzair
 # uzair.uzair()
 
-x = 10   #global variable
-def func1():
-    x = 11  #local variable
-    print(f"the local variable is {x}")
-func1()
-print(x)
+# x = 10   #global variable
+# def func1():
+#     x = 11  #local variable
+#     print(f"the local variable is {x}")
+# func1()
+# print(x)
 
 
-x = 10   #global variable
-def func1():
-    global x   
-    x = 11
-    print(f"the local variable is {x}")
-func1()
-print(x)
+# x = 10   #global variable
+# def func1():
+#     global x   
+#     x = 11
+#     print(f"the local variable is {x}")
+# func1()
+# print(x)
+
+f = open('myfiles.txt' , 'r')
+while True:
+    line = f.read()
+    if not line:
+        break
+    print(line)
+
+f2 = open('myfiles2.txt' , 'w')
+lines = ['Line 1\n','Line 2\n','Line 3\n','Line 4\n']
+f2.writelines(lines)
+f2.close()
