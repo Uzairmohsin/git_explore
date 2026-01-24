@@ -434,7 +434,36 @@ print(hi.format( name, country))
 #     print(f.read())
 
 
-mul = lambda x: x * 2
-cube = lambda x: x * x * x
-print(mul(2))
-print(cube(2))
+# mul = lambda x: x * 2
+# cube = lambda x: x * x * x
+# print(mul(2))
+# print(cube(2))
+
+# def is_even(n):
+#     return n % 2 == 0
+
+# numbers = [1, 5, 8, 10, 13, 14]
+
+# # filter(condition_function, list)
+# result = map(is_even, numbers)
+
+# # Convert the filter object to a list to see the results
+# print(list(result)) # Output: [8, 10, 14]
+
+
+# def square(n):
+#     return n**2
+
+# numbers = [1, 2, 3, 4]
+
+# # map(function, list)
+# result = map(square, numbers)
+
+# # map returns an iterator, so we convert it to a list to see the results
+# print(list(result)) # Output: [1, 4, 9, 16]
+
+l = [1,3,5,6,8,2,9]
+def grater(x):
+    return x > 4
+newl = list(map(grater, l))
+print(newl)
