@@ -427,8 +427,14 @@ print(hi.format( name, country))
 #     print(current_position)
 
 
-with open ('myfiles.txt','w') as f:
-    f.write("Hello, World I am Uzair Shaikh")
-    f.truncate(12)
-with open('myfiles.txt', 'r') as f:
-    print(f.read())
+# with open ('myfiles.txt','w') as f:
+#     f.write("Hello, World I am Uzair Shaikh")
+#     f.truncate(12)
+# with open('myfiles.txt', 'r') as f:
+#     print(f.read())
+
+
+mul = lambda x: x * 2
+cube = lambda x: x * x * x
+print(mul(2))
+print(cube(2))
