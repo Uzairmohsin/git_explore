@@ -418,10 +418,17 @@ print(hi.format( name, country))
 #     print(f"the local variable is {x}")
 # func1()
 
-with open('myfiles.txt','r') as f:
-    f.seek(10)
+# with open('myfiles.txt','w') as f:
+#     f.seek(10)
 
-    current_position = f.tell()
-    data = f.read(9)
-    print(data) 
-    print(current_position)
+#     current_position = f.tell()
+#     data = f.read(9)
+#     print(data) 
+#     print(current_position)
+
+
+with open ('myfiles.txt','w') as f:
+    f.write("Hello, World I am Uzair Shaikh")
+    f.truncate(12)
+with open('myfiles.txt', 'r') as f:
+    print(f.read())
