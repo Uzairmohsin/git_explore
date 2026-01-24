@@ -417,16 +417,11 @@ print(hi.format( name, country))
 #     x = 11
 #     print(f"the local variable is {x}")
 # func1()
-# print(x)
 
-f = open('myfiles.txt' , 'r')
-while True:
-    line = f.read()
-    if not line:
-        break
-    print(line)
+with open('myfiles.txt','r') as f:
+    f.seek(10)
 
-f2 = open('myfiles2.txt' , 'w')
-lines = ['Line 1\n','Line 2\n','Line 3\n','Line 4\n']
-f2.writelines(lines)
-f2.close()
+    current_position = f.tell()
+    data = f.read(9)
+    print(data) 
+    print(current_position)
