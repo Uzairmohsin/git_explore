@@ -469,8 +469,27 @@ print(hi.format( name, country))
 # print(newl)
 
 
-a = [1,2,3]
-b = [1,2,3]
+# a = [1,2,3]
+# b = [1,2,3]
 
-print(a is b)
-print(a == b)
+# print(a is b)
+# print(a == b)
+
+# def hello():
+#     print("Hello")
+# hello()
+
+# class Details:
+#     name = "Uzair"
+#     age = 19
+# obj1 = Details()
+# print(obj1.name)
+# print(obj1.age)
+
+class Details:
+    name = "Rohan"
+    age = 21
+    def sec(self):
+        print("My name is",self.name, "and I am", self.age, "years old")
+obj2 = Details()
+obj2.sec()
