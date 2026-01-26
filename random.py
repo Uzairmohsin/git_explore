@@ -462,8 +462,15 @@ print(hi.format( name, country))
 # # map returns an iterator, so we convert it to a list to see the results
 # print(list(result)) # Output: [1, 4, 9, 16]
 
-l = [1,3,5,6,8,2,9]
-def grater(x):
-    return x > 4
-newl = list(map(grater, l))
-print(newl)
+# l = [1,3,5,6,8,2,9]
+# def grater(x):
+#     return x > 4
+# newl = list(map(grater, l))
+# print(newl)
+
+
+a = [1,2,3]
+b = [1,2,3]
+
+print(a is b)
+print(a == b)0
