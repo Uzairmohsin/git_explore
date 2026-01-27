@@ -531,13 +531,29 @@ print(hi.format( name, country))
 
 # say_hello()
 
-def my_logger(func):
-    def wrapper():
-        print("Function is called")
-        func()
-    return wrapper
+# def my_logger(func):
+#     def wrapper():
+#         print("Function is called")
+#         func()
+#     return wrapper
 
-@my_logger
-def say_hello():
-    print("Hello")
-say_hello()
+# @my_logger
+# def say_hello():
+#     print("Hello")
+# say_hello()
+
+class Myclass:
+    def __init__(self, value):
+        self.og_value = value
+    @property
+    def value(self):
+        return self.og_value
+    
+
+    @value.setter
+    def value (self, new_value):
+        self.og_value = new_value
+        
+obj = Myclass(10)
+obj.value = 100
+print(obj.value)
