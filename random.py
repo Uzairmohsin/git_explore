@@ -486,10 +486,47 @@ print(hi.format( name, country))
 # print(obj1.name)
 # print(obj1.age)
 
-class Details:
-    name = "Rohan"
-    age = 21
-    def sec(self):
-        print("My name is",self.name, "and I am", self.age, "years old")
-obj2 = Details()
-obj2.sec()
+# class Details:
+#     name = "Rohan"
+#     age = 21
+#     def sec(self):
+#         print("My name is",self.name, "and I am", self.age, "years old")
+# obj2 = Details()
+# obj2.sec()
+
+
+# class Person:
+#     def __init__(self, n, o):
+#         self.name = n
+#         self.occ = o
+#     def info(self):
+#         print(f"{self.name} is a {self.occ}")
+# a = Person("Uzair","Data Scientist")
+# b = Person("Faiz","Doctor")
+# c = Person("Harry", "Devloper")
+# d = Person(1,2,3)
+# a.info()
+# b.info()
+# c.info()
+
+# class Details:
+#     def __init__(self, animal, group):
+#         self.animal = animal
+#         self.group = group
+
+# obj1 = Details("Crab", "Crustaceans")
+# print(obj1.animal, "belongs to the", obj1.group, "group.")
+
+
+def my_decorator(func):
+    def wrapper():
+        print("Good Morning...! Hope u feeling good today...")
+        func()
+        print("We will catch you later...good by")
+    return wrapper
+
+@my_decorator
+def say_hello():
+    print("Hello!")
+
+say_hello()
