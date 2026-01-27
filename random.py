@@ -518,15 +518,15 @@ print(hi.format( name, country))
 # print(obj1.animal, "belongs to the", obj1.group, "group.")
 
 
-def my_decorator(func):
-    def wrapper():
-        print("Good Morning...! Hope u feeling good today...")
-        func()
-        print("We will catch you later...good by")
-    return wrapper
+# def my_decorator(func):
+#     def wrapper():
+#         print("Good Morning...! Hope u feeling good today...")
+#         func()
+#         print("We will catch you later...good by")
+#     return wrapper
 
-@my_decorator
-def say_hello():
-    print("Hello!")
+# @my_decorator
+# def say_hello():
+#     print("Hello!")
 
-say_hello()
+# say_hello()
