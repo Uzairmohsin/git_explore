@@ -542,18 +542,28 @@ print(hi.format( name, country))
 #     print("Hello")
 # say_hello()
 
-class Myclass:
-    def __init__(self, value):
-        self.og_value = value
-    @property
-    def value(self):
-        return self.og_value
+# class Myclass:
+#     def __init__(self, value):
+#         self.og_value = value
+#     @property
+#     def value(self):
+#         return self.og_value
     
 
-    @value.setter
-    def value (self, new_value):
-        self.og_value = new_value
+#     @value.setter
+#     def value (self, new_value):
+#         self.og_value = new_value
         
-obj = Myclass(10)
-obj.value = 100
-print(obj.value)
+# obj = Myclass(10)
+# obj.value = 100
+# print(obj.value)
+
+class Parent():
+    def func1(self):
+        print("This function is in parent class.")
+class Child(Parent):
+    def func2(self):
+        print("This function is in child class.")
+object = Child()
+object.func1()
+object.func2()
