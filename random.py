@@ -558,12 +558,55 @@ print(hi.format( name, country))
 # obj.value = 100
 # print(obj.value)
 
-class Parent():
-    def func1(self):
-        print("This function is in parent class.")
-class Child(Parent):
-    def func2(self):
-        print("This function is in child class.")
-object = Child()
-object.func1()
-object.func2()
+# class Parent():
+#     def func1(self):
+#         print("This function is in parent class.")
+# class Child(Parent):
+#     def func2(self):
+#         print("This function is in child class.")
+# object = Child()
+# object.func1()
+# object.func2()
+
+# multiple inheritance
+# class mother:
+#     mothername = ""
+#     def mother(self):
+#         print(self.mother)
+# class father:
+#     fathername = ""
+#     def father(self):
+#         print(self.father)
+# class son(mother,father):
+#     def parent(self):
+#         print("Father's name is:", self.father)
+#         print("Mother's name is:", self.mother)
+# s1 = son()
+# s1.father = "DAD"
+# s1.mother = "Mommy"
+# s1.parent()
+
+# class School:
+#     def __init__(self):
+#         self.__uzair = 10000
+#     def show(self):
+#         print(self.__uzair)
+# obj = School()
+# obj.show()
+
+# class Account(School):
+#     def __init__(self):
+#         self.__balance = 1000   # private variable
+
+#     def show(self):
+#         print(self.__balance)
+# a = Account()
+# a.show()
+
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+a = Student("Uzair",20)
+print(dir(a))
