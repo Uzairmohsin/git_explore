@@ -604,9 +604,15 @@ print(hi.format( name, country))
 # a.show()
 
 
-class Student:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-a = Student("Uzair",20)
-print(dir(a))
+# class Student:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#     def __str__(self):
+#         return(f"The name of the student is {self.name}. And he is {self.age}.")
+
+# a = Student("Uzair",20)
+# print(a)
+
+
+
