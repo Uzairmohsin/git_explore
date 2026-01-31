@@ -619,6 +619,8 @@ print(hi.format( name, country))
 #     def is_adult(age):
 #         return age >= 18
 # # print(Adult.is_adult(20))
+
+
 # class MyClass:
 #     class_variable = 0
     
@@ -645,5 +647,5 @@ class MyClass:
 obj1 = MyClass("John")
 obj2 = MyClass("Jane")
 
-obj1.print_name() # Output: John
-obj2.print_name() # Output: Jane
+obj1.print_name()
+obj2.print_name()
