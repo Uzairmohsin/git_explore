@@ -618,19 +618,32 @@ print(hi.format( name, country))
 #     @staticmethod
 #     def is_adult(age):
 #         return age >= 18
-# print(Adult.is_adult(20))
-class MyClass:
-    class_variable = 0
+# # print(Adult.is_adult(20))
+# class MyClass:
+#     class_variable = 0
     
-    def __init__(self):
-        MyClass.class_variable += 1
+#     def __init__(self):
+#         MyClass.class_variable += 1
         
-    def print_class_variable(self):
-        print(MyClass.class_variable)
+#     def print_class_variable(self):
+#         print(MyClass.class_variable)
         
 
-obj1 = MyClass()
-obj2 = MyClass()
+# obj1 = MyClass()
+# obj2 = MyClass()
 
-obj1.print_class_variable()
-obj2.print_class_variable()
+# obj1.print_class_variable()
+# obj2.print_class_variable()
+
+class MyClass:
+    def __init__(self, name):
+        self.name = name
+        
+    def print_name(self):
+        print(self.name)
+
+obj1 = MyClass("John")
+obj2 = MyClass("Jane")
+
+obj1.print_name() # Output: John
+obj2.print_name() # Output: Jane
