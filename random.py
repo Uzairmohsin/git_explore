@@ -614,8 +614,8 @@ print(hi.format( name, country))
 # a = Student("Uzair",20)
 # print(a)
 
-class Adult:
-    @staticmethod
-    def is_adult(age):
-        return age >= 18
-print(Adult.is_adult(20))
+# class Adult:
+#     @staticmethod
+#     def is_adult(age):
+#         return age >= 18
+# print(Adult.is_adult(20))
