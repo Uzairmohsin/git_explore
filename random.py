@@ -621,20 +621,20 @@ print(hi.format( name, country))
 # # print(Adult.is_adult(20))
 
 
-class MyClass:
-    class_variable = 0
+# class MyClass:
+#     class_variable = 0
     
-    def __init__(self):
-        MyClass.class_variable += 1
+#     def __init__(self):
+#         MyClass.class_variable += 1
         
-    def print_class_variable(self):
-        print(MyClass.class_variable)
+#     def print_class_variable(self):
+#         print(MyClass.class_variable)
         
 
-obj1 = MyClass()
-# obj2 = MyClass()
+# obj1 = MyClass()
+# # obj2 = MyClass()
 
-obj1.print_class_variable()
+# obj1.print_class_variable()
 # obj2.print_class_variable()
 
 # class MyClass:
@@ -652,13 +652,25 @@ obj1.print_class_variable()
 
 #Cluttering Files
 
-import os
-def clutter():
-  path = input("enter the path : ")
-  f = input("enter the format .png or .jpg or.pdf ")
-  l = 0
-  for i in os.listdir(path):
-      os.rename(f'{path}{i}',f"{path}{l}.{f}")
-      l = l + 1
+# import os
+# def clutter():
+#   path = input("enter the path : ")
+#   f = input("enter the format .png or .jpg or.pdf ")
+#   l = 0
+#   for i in os.listdir(path):
+#       os.rename(f'{path}{i}',f"{path}{l}.{f}")
+#       l = l + 1
   
-clutter()
+# clutter()
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    @classmethod
+    def form_string(cls, string):
+        name, age = string.split(',')
+        return cls(name,int(age))
+person = Person.form_string("John Doe, 30")
+print(person.name,person.age)
