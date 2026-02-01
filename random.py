@@ -649,3 +649,16 @@ obj1.print_class_variable()
 
 # obj1.print_name()
 # obj2.print_name()
+
+#Cluttering Files
+
+import os
+def clutter():
+  path = input("enter the path : ")
+  f = input("enter the format .png or .jpg or.pdf ")
+  l = 0
+  for i in os.listdir(path):
+      os.rename(f'{path}{i}',f"{path}{l}.{f}")
+      l = l + 1
+  
+clutter()
