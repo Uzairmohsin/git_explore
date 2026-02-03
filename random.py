@@ -675,17 +675,30 @@ print(hi.format( name, country))
 # person = Person.form_string("John Doe, 30")
 # print(person.name,person.age)
 
-#super keyword
-class emplyee():
-    def __init__(self , name, id):
-        self.name = name
-        self.id = id
-class Programmer(emplyee):
-    def __init__(self, name, id, lang):
-        super().__init__(name, id)
-        self.lang = lang
-harry = emplyee("Harry","122")
-uzair = Programmer("Uzair","786","python")
-print(uzair.name)
-print(uzair.id)
-print(uzair.lang)
+
+
+# #super keyword
+# class emplyee():
+#     def __init__(self , name, id):
+#         self.name = name
+#         self.id = id
+# class Programmer(emplyee):
+#     def __init__(self, name, id, lang):
+#         super().__init__(name, id)
+#         self.lang = lang
+# harry = emplyee("Harry","122")
+# uzair = Programmer("Uzair","786","python")
+# print(uzair.name)
+# print(uzair.id)
+# print(uzair.lang)
+
+class ParentClass:
+    def parent_method(self):
+        print("This is the parent method.")
+
+class ChildClass(ParentClass):
+    def child_method(self):
+        print("This is the child method.")
+        super().parent_method()
+child_object = ParentClass()
+child_object.parent_method
