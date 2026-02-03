@@ -674,3 +674,18 @@ print(hi.format( name, country))
 #         return cls(name,int(age))
 # person = Person.form_string("John Doe, 30")
 # print(person.name,person.age)
+
+#super keyword
+class emplyee():
+    def __init__(self , name, id):
+        self.name = name
+        self.id = id
+class Programmer(emplyee):
+    def __init__(self, name, id, lang):
+        super().__init__(name, id)
+        self.lang = lang
+harry = emplyee("Harry","122")
+uzair = Programmer("Uzair","786","python")
+print(uzair.name)
+print(uzair.id)
+print(uzair.lang)
