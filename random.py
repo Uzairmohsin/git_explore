@@ -692,13 +692,19 @@ print(hi.format( name, country))
 # print(uzair.id)
 # print(uzair.lang)
 
-class ParentClass:
-    def parent_method(self):
-        print("This is the parent method.")
+# class ParentClass:
+#     def parent_method(self):
+#         print("This is the parent method.")
 
-class ChildClass(ParentClass):
-    def child_method(self):
-        print("This is the child method.")
-        super().parent_method()
-child_object = ParentClass()
-child_object.parent_method
+# class ChildClass(ParentClass):
+#     def child_method(self):
+#         print("This is the child method.")
+#         super().parent_method()
+# child_object = ParentClass()
+# child_object.parent_method
+
+from uzair import Employee
+
+e = Employee("Uzair", "20")
+print(e)
+
