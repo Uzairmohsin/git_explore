@@ -708,15 +708,15 @@ print(hi.format( name, country))
 # e = Employee("Uzair", "20")
 # print(e)
 
-class Shape:
-    def area(self):
-        print("Area calculating")
-class Circle(Shape):
-    def __init__(self, radius):
-        self.radius = radius
-    def area(self):
-        print("Calculating are of a circle")
-        super().area()
-        return 3.14 * self.radius * self.radius
-cir = Circle(5)
-print(cir.area())
+# class Shape:
+#     def area(self):
+#         print("Area calculating")
+# class Circle(Shape):
+#     def __init__(self, radius):
+#         self.radius = radius
+#     def area(self):
+#         print("Calculating are of a circle")
+#         super().area()
+#         return 3.14 * self.radius * self.radius
+# cir = Circle(5)
+# print(cir.area())
