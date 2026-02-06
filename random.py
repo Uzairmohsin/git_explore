@@ -720,3 +720,63 @@ print(hi.format( name, country))
 #         return 3.14 * self.radius * self.radius
 # cir = Circle(5)
 # print(cir.area())
+
+# class Addition:
+#     def __init__(self, x , y):
+#         self.x = x
+#         self.y = y
+#     def __add__(self, other):
+#         return (self.x + other.x + self.y + other.y)
+
+# add1 = Addition(4,5)
+# add2 = Addition(6,7)
+# add3 = add1 + add2
+# print(add3)
+
+
+# class Animal:
+#     def __init__(self, name, species):
+#         self.name = name
+#         self.species = species
+#     def sound_made(self):
+#         print("Sound made by animal is...")
+        
+# class mammal:
+#     def __init__(self,name,fur_color):
+#         self.name = name
+#         self.fur_color = fur_color
+# class cat:
+#     def __init__(self, name, breed, fur_color):
+#         Animal.__init__(self, name, species="cat")
+#         mammal.__init__(self, name,fur_color)
+#         self.breed = breed
+#     def sound_made(self):
+#         print("Miyannuuuunnnnn")
+# o = cat("Billu","persian","white")
+# print(o.name)
+# print(o.fur_color)
+# print(o.breed)
+
+class Animal:
+    def __init__(self,name,species):
+        self.name = name
+        self.species = species
+    def show_details(self):
+        print(f"Name: {self.name}")
+        print(f"Species: {self.species}")
+class dog(Animal):
+    def __init__(self,name, breed):
+        Animal.__init__(self, name, species="Dog")
+        self.breed = breed
+    def show_details(self):
+        Animal.show_details(self)
+        print(f"Breed: {self.breed}")
+class GermanShepard:
+    def __init__(self,name,color):
+        dog.__init__(self, name, breed ="German Shepard")
+        self.color = color
+    def show_details(self):
+        dog.show_details(self)
+        print(f"Color: {self.color}")
+o = GermanShepard("Dogesh Bhau","golden")
+o.show_details()
