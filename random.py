@@ -757,26 +757,61 @@ print(hi.format( name, country))
 # print(o.fur_color)
 # print(o.breed)
 
-class Animal:
-    def __init__(self,name,species):
+
+
+# class Animal:
+#     def __init__(self,name,species):
+#         self.name = name
+#         self.species = species
+#     def show_details(self):
+#         print(f"Name: {self.name}")
+#         print(f"Species: {self.species}")
+# class dog(Animal):
+#     def __init__(self,name, breed):
+#         Animal.__init__(self, name, species="Dog")
+#         self.breed = breed
+#     def show_details(self):
+#         Animal.show_details(self)
+#         print(f"Breed: {self.breed}")
+# class GermanShepard:
+#     def __init__(self,name,color):
+#         dog.__init__(self, name, breed ="German Shepard")
+#         self.color = color
+#     def show_details(self):
+#         dog.show_details(self)
+#         print(f"Color: {self.color}")
+# o = GermanShepard("Dogesh Bhau","golden")
+# o.show_details()
+
+class Human:
+    def __init__(self, name, age):
         self.name = name
-        self.species = species
+        self.age = age
     def show_details(self):
-        print(f"Name: {self.name}")
-        print(f"Species: {self.species}")
-class dog(Animal):
-    def __init__(self,name, breed):
-        Animal.__init__(self, name, species="Dog")
-        self.breed = breed
+        print("Name: ",self.name)
+        print("Age: ",self.age)
+class Person(Human):
+    def __init__(self, name, age, address):
+        Human.__init__(self, name, age)
+        self.address = address
     def show_details(self):
-        Animal.show_details(self)
-        print(f"Breed: {self.breed}")
-class GermanShepard:
-    def __init__(self,name,color):
-        dog.__init__(self, name, breed ="German Shepard")
-        self.color = color
+        print("Address: ",self.address)
+class Program:
+    def __init__(self,program_name,duration):
+        self.program_name = program_name
+        self.duration = duration
     def show_details(self):
-        dog.show_details(self)
-        print(f"Color: {self.color}")
-o = GermanShepard("Dogesh Bhau","golden")
-o.show_details()
+        print("Program Name: ",self.program_name)
+        print("Duration: ",self.duration)
+class Student(Person):
+    def __init__(self,name, age, address, Program):
+        Person.__init__(self,name,age,address)
+        self.program = Program
+    def show_details(self):
+        Person.show_details(self)
+        self.program.show_details()
+program = Program("Computer Science", 4)
+student = Student("John Doe", 25, "123 Main St.", program)
+student.show_details()
+
+
