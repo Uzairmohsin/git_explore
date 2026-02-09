@@ -816,35 +816,47 @@ print(hi.format( name, country))
 
 
 
-class Animal:
-    def __init__(self, name):
-        self.name = name
+# class Animal:
+#     def __init__(self, name):
+#         self.name = name
 
-    def show_details(self):
-        print("Name:", self.name)
+#     def show_details(self):
+#         print("Name:", self.name)
 
-class Dog(Animal):
-    def __init__(self, name, breed):
-        Animal.__init__(self, name)
-        self.breed = breed
+# class Dog(Animal):
+#     def __init__(self, name, breed):
+#         Animal.__init__(self, name)
+#         self.breed = breed
 
-    def show_details(self):
-        Animal.show_details(self)
-        print("Species: Dog")
-        print("Breed:", self.breed)
+#     def show_details(self):
+#         Animal.show_details(self)
+#         print("Species: Dog")
+#         print("Breed:", self.breed)
 
-class Cat(Animal):
-    def __init__(self, name, color):
-        Animal.__init__(self, name)
-        self.color = color
+# class Cat(Animal):
+#     def __init__(self, name, color):
+#         Animal.__init__(self, name)
+#         self.color = color
 
-    def show_details(self):
-        Animal.show_details(self)
-        print("Species: Cat")
-        print("Color:", self.color)
+#     def show_details(self):
+#         Animal.show_details(self)
+#         print("Species: Cat")
+#         print("Color:", self.color)
 
 
-dog = Dog("Max", "Golden Retriever")
-dog.show_details()
-cat = Cat("Luna", "Black")
-cat.show_details()
+# dog = Dog("Max", "Golden Retriever")
+# dog.show_details()
+# cat = Cat("Luna", "Black")
+# cat.show_details()
+
+
+from os import system
+
+names = ["AayushGarg15", "Yuniek", "NiteshUpadhyay2"]
+
+for name in names:
+    system(
+        f'powershell -Command "Add-Type -AssemblyName System.Speech; '
+        f'(New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak(\'Shoutout to {name}\')"'
+    )
+
