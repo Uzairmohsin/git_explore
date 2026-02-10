@@ -872,11 +872,22 @@ print(hi.format( name, country))
 # end = time.time()
 # print("Execution time:", end - start)
 
+# import argparse
+
+# parser = argparse.ArgumentParser()
+# parser.add_argument("name", help="your name")
+
+# args = parser.parse_args()
+# print(args.name)
+
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("name", help="your name")
+parser.add_argument(
+    "-o", "--optional",
+    help="description of optional argument",
+    default="default_value"
+)
 
 args = parser.parse_args()
-print(args.name)
-
+print(args.optional)
