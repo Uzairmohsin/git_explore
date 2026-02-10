@@ -859,17 +859,24 @@ print(hi.format( name, country))
 #         f'powershell -Command "Add-Type -AssemblyName System.Speech; '
 #         f'(New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak(\'Shoutout to {name}\')"'
 #     )
-import time
-start = time.time()
+# import time
+# start = time.time()
 
-def usingwhile():
-    i = 0
-    while i < 50000:
-        i = i +1
-        print(i)
+# def usingwhile():
+#     i = 0
+#     while i < 50000:
+#         i = i +1
+#         print(i)
 
-usingwhile()
-end = time.time()
-print("Execution time:", end - start)
+# usingwhile()
+# end = time.time()
+# print("Execution time:", end - start)
 
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("name", help="your name")
+
+args = parser.parse_args()
+print(args.name)
 
