@@ -880,14 +880,24 @@ print(hi.format( name, country))
 # args = parser.parse_args()
 # print(args.name)
 
-import argparse
+# import argparse
 
-parser = argparse.ArgumentParser()
-parser.add_argument(
-    "-o", "--optional",
-    help="description of optional argument",
-    default="default_value"
-)
+# parser = argparse.ArgumentParser()
+# parser.add_argument(
+#     "-o", "--optional",
+#     help="description of optional argument",
+#     default="default_value"
+# )
 
-args = parser.parse_args()
-print(args.optional)
+# args = parser.parse_args()
+# print(args.optional)
+
+# import argparse
+
+# parser = argparse.ArgumentParser()
+# args = parser.parse_args()
+
+
+numbers = [1,2,3,4,5]
+while (n := len(numbers)) > 0:
+    print(numbers.pop())
